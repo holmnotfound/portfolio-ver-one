@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Akira Expanded', sans-serif;
+
+}
+
+:root{
+    --mainColor: #4E21FD;
+   --secondColor: #9F9FAD;
+   --heroRubrik: 5.6rem;
+   --title: 4rem;
+   --buttontext: 1rem;
+   --mainfont: 'Akira Expanded';
+   --secondfont: "Spline Sans"; 
+}
+
+body{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    height: 100%;
+    place-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    grid-area: nav;
+    position: fixed;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.nav__link-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo-img{
+    width: 60px;
+}
+
+.nav__button--cv, 
+.header__button--home,
+.header__button--projects,
+.header__button--about,
+.header__button--connect{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: white;
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--secondfont);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--secondColor);
+}
+
+.nav__button--cv:hover,
+.header__button--home:hover,
+.header__button--projects:hover,
+.header__button--about:hover,
+.header__button--connect:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.nav__link-some{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.nav__link-some:hover{
+    transform: scale(1.2);
+}
+
+.header_job-wrapper{
+    color: var(--mainColor);
+    box-sizing: content-box;
+    display: flex;
+    height: 190px;
+    margin-bottom: 50px;
+    padding: 40px 30px ;
+    box-shadow: 0 20px 25px rgba(black);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    grid-area: header;
+    
+}
+
+.header__name-text{
+    font-size: 3rem;
+    color: var(--mainColor);
+}
+
+.header__job-list{
+    overflow: hidden;
+}
+
+.job{
+    font-size: 5.6rem;
+    line-height: 5.5rem;
+    display: block;
+    text-align: center;
+    height: 300px;   
+    animation: spin_words 15s infinite;
+}
+
+.header__button--home,
+.header__button--projects,
+.header__button--about,
+.header__button--connect{
+    margin: 40px;
+}
+
+.header__button{
+    grid-area: buttons;
+}

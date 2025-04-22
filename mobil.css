@@ -1,13 +1,49 @@
-@media screen and (max-width: 767px) {
-   .nav{
+@media screen and (max-width: 1020px) {
+    .about-me__img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 867px) {
+    .d-none{
+        display: flex;
+    }
+    .header__scroll{
+        color: rgb(78, 33, 253);;
+        margin-top: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__scroll-arrow{
+        width: 30px;
+        height: auto;
+        animation: bounce 2s infinite ease-in-out;
+    }
+
+   .nav__button--cv{
     display: none;
+   }
+
+   .header{
+    height: 100vh;
    }
 
    .header__buttons{
     display: none;
    }
 
+   .nav__link-some{
+    width: 35px;
+   }
+
+   .nav__logo-img{
+    width: 50px;
+   }
+
    .header__name-text{
+    padding-top: 150px;
     font-size: 1.7rem;
     width: 300px;
     text-align: center;
@@ -60,6 +96,11 @@
     text-align: center;
     width: 350px;
    
+}
+
+.about-me__text-edu{
+    
+    width: 350px;
 }
 
 .tools{

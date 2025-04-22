@@ -23,23 +23,25 @@ html {
   }
 
 body{
-    margin-top: 45px;
     margin-bottom: 45px;
     height: 100%;
     place-items: center;
 }
 
-.nav {
+.nav{ 
+    
     display: flex;
     flex-direction: row;
     width: 100%;
     grid-area: nav;
     position: fixed;
+    padding-top: 35px;
     padding-right: 35px;
     padding-left: 35px;
 }
 
 .nav__wrapper {
+    
     display: flex;
     justify-content: space-between; 
     align-items: center;

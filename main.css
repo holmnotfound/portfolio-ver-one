@@ -1,5 +1,5 @@
 :root{
-    --mainColor: #4E21FD;
+    --mainColor: rgb(78, 33, 253);
    --secondColor: #9F9FAD;
    --heroRubrik: 5.6rem;
    --title: 4rem;
@@ -8,6 +8,9 @@
    --secondfont: "Spline Sans"; 
 }
 
+.d-none{
+    display: none;
+}
 
 .main{
     width: 100%;
@@ -154,6 +157,7 @@
 
 .about-me__img{
     margin-right: 200px;
+    max-width: 450px;
     width: 450px;
     height: auto;
     border: 2px solid;
@@ -183,7 +187,8 @@
 .about-me__text{
     font-family: var(--secondfont);
     font-weight: 600;
-    width: 500px;
+    width: 100%;
+    max-width: 450px;
     line-height: 28px;
     padding-bottom: 25px;
 }
@@ -191,7 +196,8 @@
 .about-me__text-edu{
     font-family: var(--secondfont);
     font-weight: 600;
-    width: 500px;
+    max-width: 450px;
+    width: 100%;
     line-height: 28px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -200,7 +206,9 @@
 
 .tools{
     padding-top: 25px;
-    width: 400px;
+    height: auto;
+    max-width: 450px;
+    width: 100%;
 }
 
 .about-me__tool{

@@ -14,7 +14,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        opacity: 1;
+  transition: opacity 0.5s ease;
     }
+
+    .header__scroll.fade-out {
+        opacity: 0;
+      }
 
     .header__scroll-arrow{
         width: 30px;
@@ -26,6 +32,25 @@
     display: none;
    }
 
+   .about-me__cv-link{
+    text-decoration: none;
+    margin: 15px;
+   }
+
+   .cv__button--cv{
+    text-decoration: none;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: white;
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: var(--mainfont);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--mainColor);
+   }
+
    .header{
     height: 100vh;
    }
@@ -34,12 +59,24 @@
     display: none;
    }
 
+   .nav{ 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    grid-area: nav;
+    padding-top: 25px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
    .nav__link-some{
-    width: 35px;
+    width: 32px;
+    margin-left: 30px;
    }
 
    .nav__logo-img{
-    width: 50px;
+    width: 43px;
    }
 
    .header__name-text{

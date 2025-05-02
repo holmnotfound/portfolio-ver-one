@@ -24,6 +24,29 @@
     width: 100%;
 }
 
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--mainColor);
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
 .projects__rolling--right{
     margin-right: 40px;
     white-space: nowrap;
@@ -46,14 +69,14 @@
     color: var(--mainColor);
     font-size: 1.5rem;
     display: inline-block;
-    animation: rolling_words_right 28s linear infinite;
+    animation: rolling_words_right 110s linear infinite;
 }
 
 .projects__rolling-text{
     color: var(--mainColor);
     font-size: 1.5rem;
     display: inline-block;
-    animation: rolling_words 28s linear infinite;
+    animation: rolling_words 110s linear infinite;
 }
 
 
@@ -166,10 +189,10 @@
     
 }
 
-
 .about-me__title{
     font-size: 3rem;
     color: var(--mainColor);
+    padding-bottom: 20px;
 }
 
 .education-wrap{
